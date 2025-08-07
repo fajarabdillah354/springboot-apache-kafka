@@ -1,6 +1,7 @@
 package dev.codejar.kafka.config;
 
 
+import org.apache.kafka.clients.admin.NewPartitions;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +15,14 @@ public class KafkaTopicConfig {
     public NewTopic fajarTopic(){
         return TopicBuilder
                 .name("fajar")
+                .build();
+    }
+
+
+    @Bean
+    public NewTopic ujehTopic(){
+        return TopicBuilder
+                .name("ujeh")
                 .build();
     }
 
