@@ -17,8 +17,8 @@ public class KafkaProducer {
 
 
     public void sendMessage(String message){
-        log.info(format("Sending message to fajar Topic :: %s", message));
-        kafkaTemplate.send("fajar", message);
+        log.info("Sending message to ujeh Topic :: {}", message);
+        kafkaTemplate.send("ujeh", message);
     }
 
 }
