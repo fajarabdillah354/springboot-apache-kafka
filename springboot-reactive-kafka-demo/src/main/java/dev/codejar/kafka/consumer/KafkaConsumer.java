@@ -13,9 +13,9 @@ import org.springframework.stereotype.Service;
 public class KafkaConsumer {
 
 
-//    @KafkaListener(topics = "fajar", groupId = "myCodejar")
+    @KafkaListener(topics = "ujeh", groupId = "myCodejar")
     public void consumedMessage(String message){
-        log.info("Consuming the message from fajar topic :: {}", message);
+        log.info("Consuming the message from ujeh topic :: {}", message);
     }
 
     @KafkaListener(topics = "fajar", groupId = "myCodejar")
